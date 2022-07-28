@@ -761,7 +761,7 @@ endif ()
 # the leak sanitizer.
 # To test with valgrind run "ctest -T memcheck"
 set( MEMORYCHECK_COMMAND_OPTIONS "--error-exitcode=1 --leak-check=no --trace-children=yes" )
-include (CTest)
+#include (CTest)
 
 #
 # We want asserts enabled on all modes, but cmake defaults to passing
